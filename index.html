@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universitet İdarəetmə Sistemi</title>
+  </head>
+  <body>
+
+    <!-- Sayt başlığı və menyu -->
+    <header>
+      <h1>Azərbaycan Universitet İdarəetmə Sistemi</h1>
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Əsas Panel</a></li>
+          <li><a href="#students">Tələbələr</a></li>
+          <li><a href="#teachers">Müəllimlər</a></li>
+          <li><a href="#courses">Fənnlər</a></li>
+          <li><a href="#departments">Fakültələr</a></li>
+          <li><a href="#exams">İmtahanlar</a></li>
+          <li><a href="#library">Kitabxana</a></li>
+          <li><a href="#events">Tədbirlər</a></li>
+          <li><a href="#contact">Əlaqə</a></li>
+          <li><a href="#about">Haqqımızda</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+
+      <!-- Dashboard -->
+      <section id="dashboard">
+        <h2>Əsas Panel</h2>
+        <p>Xoş gəlmisiniz! Buradan bütün idarəetmə bölmələrinə keçid edə bilərsiniz.</p>
+      </section>
+
+      <!-- Tələbə qeydiyyat formu -->
+      <section id="students">
+        <h2>Tələbə Qeydiyyatı</h2>
+        <form>
+          <fieldset>
+            <legend>Şəxsi Məlumat</legend>
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label for="surname">Soyad:</label>
+            <input type="text" id="surname" name="surname" required /><br />
+            <label for="birth">Doğum Tarixi:</label>
+            <input type="date" id="birth" name="birth" /><br />
+            <label>Cins:</label>
+            <input type="radio" id="man" name="gender" value="man" />
+            <label for="man">Kişi</label>
+            <input type="radio" id="woman" name="gender" value="woman" />
+            <label for="woman">Qadın</label>
+          </fieldset>
+          <fieldset>
+            <legend>Təhsil və Əlaqə</legend>
+            <label for="faculty">Fakültə:</label>
+            <select id="faculty">
+              <option disabled selected>İxtisas sec</option>
+              <option value="it">İT</option>
+              <option value="riyaz">Riyaziyyat</option>
+              <option value="bio">Biologiya</option>
+            </select><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" /><br />
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" /><br />
+            <label for="address">Ünvan:</label>
+            <textarea id="address" rows="2"></textarea>
+          </fieldset>
+          <input type="submit" value="Qeydiyyat" />
+        </form>
+      </section>
+
+      <!-- Tələbə siyahısı -->
+      <section>
+        <h2>Mövcud Tələbələr</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>#</th><th>Ad</th><th>Fakültə</th><th>Email</th><th>Telefon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>John Doe</td><td>İT</td><td>john@doe.az</td><td>0501234567</td>
+            </tr>
+            <tr>
+              <td>2</td><td>John2 Doe2</td><td>Biologiya</td><td>john2@doe.az</td><td>0517654321</td>
+            </tr>
+            <tr>
+              <td>3</td><td>John2 Doe2</td><td>Biologiya</td><td>john2@doe.az</td><td>0517654321</td>
+            </tr>
+            <tr>
+              <td>4</td><td>John2 Doe2</td><td>Biologiya</td><td>john2@doe.az</td><td>0517654321</td>
+            </tr>
+            <tr>
+              <td>5</td><td>John2 Doe2</td><td>Biologiya</td><td>john2@doe.az</td><td>0517654321</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Müəllimlər bölməsi -->
+      <section id="teachers">
+        <h2>Müəllimlər</h2>
+        <article>
+          <h3>Dr. John Doe</h3>
+          <p>Biologiya üzrə baş müəllim.</p>
+        </article>
+        <article>
+          <h3>Prof. John Doe</h3>
+          <p>Riyaziyyat üzrə ixtisaslaşmış professor.</p>
+        </article>
+      </section>
+
+      <!-- Fənnlər və Fakültələr -->
+      <section id="courses">
+        <h2>Tədris Fənnləri</h2>
+        <ul>
+          <li>Web Proqramlaşdırma</li>
+          <li>Verilənlər bazası</li>
+          <li>Kimya</li>
+        </ul>
+      </section>
+      <section id="departments">
+        <h2>Fakültələr</h2>
+        <ol>
+          <li>İnformasiya Texnologiyaları</li>
+          <li>Təbiət Elmləri</li>
+          <li>Humanitar Elmlər</li>
+        </ol>
+      </section>
+
+      <!-- İmtahan məlumatları -->
+      <section id="exams">
+        <h2>İmtahanlar</h2>
+        <table border="1">
+          <thead>
+            <tr><th>Fənn</th><th>Tarix</th><th>Otaq</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Riyaziyyat</td><td>15/06/2025</td><td>203</td></tr>
+            <tr><td>Web Proqramlaşdırma</td><td>20/06/2025</td><td>102</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Kitabxana bölməsi -->
+      <section id="library">
+        <h2>Kitabxana</h2>
+        <p>10000-dən çox kitab, jurnallar və elektron resurslar mövcuddur.</p>
+        <ul>
+          <li><strong>HTML və CSS Kitabı</strong> - 2023</li>
+          <li><strong>Alqoritmlər</strong> - 2022</li>
+        </ul>
+      </section>
+
+      <!-- Tədbirlər -->
+      <section id="events">
+        <h2>Tədbirlər</h2>
+        <article>
+          <h3>Elmi Konfrans</h3>
+          <p>25 İyun 2025 tarixində keçiriləcək. Bütün müəllim və tələbələr dəvətlidir.</p>
+        </article>
+        <article>
+          <h3>Karyera Günü</h3>
+          <p>Şirkət nümayəndələri ilə görüş və iş imkanları haqqında məlumat.</p>
+        </article>
+      </section>
+
+      <!-- Əlaqə formu -->
+      <section id="contact">
+        <h2>Əlaqə</h2>
+        <form>
+          <label for="fullname">Ad Soyad:</label>
+          <input type="text" id="fullname" name="fullname" /><br />
+          <label for="message">Mesaj:</label><br />
+          <textarea id="message" name="message" rows="4"></textarea><br />
+          <input type="submit" value="Göndər" />
+        </form>
+      </section>
+
+      <!-- Haqqımızda bölməsi -->
+      <section id="about">
+        <h2>Haqqımızda</h2>
+        <p>Azərbaycan Universiteti 1960-cı ildən fəaliyyət göstərir. Burada 100-dən çox müəllim və 2000-dən artıq tələbə təhsil alır.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AZ Universitet. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+  </body>
+</html>
